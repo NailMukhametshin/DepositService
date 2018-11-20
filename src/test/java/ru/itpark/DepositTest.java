@@ -1,15 +1,17 @@
 package ru.itpark;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DepositTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateDeposit() {
         {
             Deposit deposit = new Deposit();
             double i = deposit.calculateDeposit(100_000, 92, 12);
-            assertEquals(103_024.65753424658, i); //согласно сайту 103_025р, из за округления
+            assertEquals(103_025, i);
         }
 
         {
