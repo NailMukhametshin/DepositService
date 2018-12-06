@@ -8,6 +8,7 @@ class DepositTest {
 
     @Test
     void calculateDeposit() {
+        // Some changes
         {
             Deposit deposit = new Deposit();
             double i = deposit.calculateDeposit(100_000, 92, 12);
