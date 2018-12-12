@@ -13,13 +13,13 @@ class DepositTest {
 
         {
             DepositService deposit = new DepositService();
-            double result = deposit.calculateDeposit(100_000, 92, 12);
+            int result = deposit.calculateDeposit(100_000, 92, 12);
             assertEquals(103_025, result);
         }
 
         {
             DepositService deposit = new DepositService();
-            double result = deposit.calculateDeposit(10_000_000, 365, 7.5);
+            int result = deposit.calculateDeposit(10_000_000, 365, 7.5);
             assertEquals(10_750_000, result);
         }
     }
